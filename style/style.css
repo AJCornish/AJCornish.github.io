@@ -343,7 +343,6 @@ font-size: 25px;
 .contactemailtitle{
   font-family: "Courier New", monospace;
   font-weight: bold;
-  position: relative;
   bottom: 60vh;
   margin-left: 20px;
   font-size: 20px;
@@ -363,8 +362,21 @@ font-size: 25px;
   font-family: "Courier New", monospace;
   font-weight: bold;
   position: relative;
-  bottom: 50vh;
+  bottom: 47vh;
   margin-left: 20px;
   font-size: 20px;
   position: absolute;
+}
+
+.blogposttile{
+    overflow-y: auto;
+    grid-template-columns: auto;
+    height: 70vh;
+}
+
+.blogtext{
+font-family: "Courier New", monospace;
+    font-weight: bold;
+    margin: 15px;
+    margin-top: 20px;
 }
