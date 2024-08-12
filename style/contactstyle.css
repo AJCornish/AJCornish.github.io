@@ -1,0 +1,183 @@
+body {
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+.header{
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+    text-decoration: none;
+    top: 2vh;
+    position: relative;
+    font-size: 40px;
+    color: black;
+}
+.gridcontainer{
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    grid-template-columns: 5vw 1vw 4vw 2vw 40vw 1vw 47vw;
+    grid-template-rows: 14.454vh 5.727vh 73.91vh 1.182vh 4.727vh;
+    padding-right: 10px;
+    overflow: hidden;
+    background-color: black;
+}
+
+.tile{
+    border: 2px solid rgb(0,0,0);
+    width: auto;
+    position: relative;
+    background-color: rgb(232, 231, 229);
+}
+
+.bluesquare{
+    grid-column: 1 / span 3;
+    background-color: rgb(24,109,167);
+}
+.whitesquare1{
+    grid-column: 5/ span 3;
+
+    text-align: center;
+}
+
+.whitesquare1, .whitesquare2, .bottomleftwhite{
+    background-color: rgb(232, 231, 229);
+}
+.whitesquarelong{
+    grid-column: 1 / span 3;
+    background-color: rgb(232, 231, 229);
+}
+.blacklonghorizontal{
+    grid-column: 1 / span 7;
+    display: inline-block;
+    text-align: left;
+    margin-top: 0.6vh;
+}
+/*_____ NAVIGATION BAR CSS FOR BOTH VERSIONS _____*/
+
+.navbartop{
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 19px;
+    background-color: rgb(232, 231, 229);
+    height: 4.5vh;
+    padding 0.5vh;
+}
+.navbartop:hover{
+    background-color: rgb(0, 0, 0);
+    color: rgb(232, 231, 229);
+}
+
+.yellowrect {
+    background-color: rgb(237,219,107);
+}
+
+.e3{
+    grid-column: 5 / span 3;
+    grid-row: 3/ span 3;
+    background-color: rgb(224,41,33);
+}
+.introtitle{
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+.e3{
+    display:grid;
+    overflow-y: scroll;
+    grid-template-columns: auto;
+}
+
+.tiletitle{
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+    margin: 10px;
+}
+.tiletext{
+    font-family: "Courier New", monospace;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.tile{
+        width: 82vw;
+        margin: 5px;
+        margin-bottom: 15px;
+        border-style: solid;
+        border-width: 5px;
+}
+.readmore{
+    margin: 10px;
+    border: solid;
+    color: rgb(0,0,0);
+    font-weight: bold;
+    padding: 10px;
+    position: relative;
+    bottom: 0px;
+    font-size: 16px;
+    width: 130px;
+    text-decoration: none;
+    font-family: "Courier New", monospace;
+    background-color: rgb(232, 231, 229);
+}
+@media (min-width: 721px){
+    .navbartop{
+        margin-left: 10px;
+
+    }
+    .tile{
+        width: auto;
+        margin: 1vh;
+        margin-bottom: 15px;
+        border-style: solid;
+        border-width: 5px;
+    }
+}
+/* CSS for Mobile */
+@media (max-width: 720px) and (pointer:coarse){
+
+    .whitesquare1{
+        text-align: center;
+    }
+    .header{
+        text-align: center;
+        top: 20%;
+        position: relative;
+        font-size: 8vw;
+        color: black;
+    }
+    .blackline2{
+        display: none;
+    }
+    .whitesquare2{
+        display: none;
+    }
+    .gridcontainer{
+        overflow-y: hidden;
+        overflow-x: hidden;
+        grid-template-columns: 5vw 1vw 4vw 2vw 40vw 1vw 47vw;
+        grid-template-rows: 14.454vh 5.727vh 73.91vh 1.182vh 4.727vh;
+        padding-right: 10px;
+    }
+    .blacklonghorizontal{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        width: 100%;
+        text-align: center;
+        margin-top: 0.6vh;
+    }
+    .navbartop{
+        display: inline-block;
+        width: 33.3vw;
+        height: 4.5vh;
+        padding 0.5vh;
+    }
+
+}
